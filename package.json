@@ -1,0 +1,27 @@
+{
+  "name": "restify-sandbox",
+  "version": "0.0.1",
+  "description": "Learning quirks of restify and sequelize",
+  "main": "index.js",
+  "dependencies": {
+    "mysql": "^2.12.0",
+    "restify": "^4.3.0",
+    "sequelize": "^3.28.0",
+    "typescript": "2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "restify-sandbox"
+  },
+  "keywords": [
+    "restify",
+    "sandbox",
+    "sequelize"
+  ],
+  "author": "",
+  "license": "ISC"
+}
