@@ -4,6 +4,8 @@
   "description": "Learning quirks of restify and sequelize",
   "main": "index.js",
   "dependencies": {
+    "babel-register": "^6.18.0",
+    "graphql": "^0.8.2",
     "mysql": "^2.12.0",
     "restify": "^4.3.0",
     "sequelize": "^3.28.0",

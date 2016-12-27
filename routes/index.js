@@ -1,4 +1,5 @@
 var euserRouter = require('./euser')
+var graphqlRouter = require('./graphql')
 
 var router = (server) => {
   server.get('/', (req, res, next) => {
@@ -6,6 +7,7 @@ var router = (server) => {
   })
   
   euserRouter(server)
+  graphqlRouter(server)
 }
 
 module.exports = router

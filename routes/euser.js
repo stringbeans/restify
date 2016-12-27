@@ -17,6 +17,11 @@ var usersRouter = (server) => {
     //   next(err)
     // })
   })
+
+  server.post('/euser', (req, res, next) => {
+    console.log('hi')
+    next()
+  })
 }
 
 module.exports = usersRouter

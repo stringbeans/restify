@@ -1,3 +1,5 @@
+require("babel-register");
+
 var restify = require('restify'),
     port = process.env.PORT || 3030,
     router = require('./routes/index'),
@@ -5,10 +7,30 @@ var restify = require('restify'),
       name: 'Test'
     });
 
+// server.use(restify.acceptParser(server.acceptable))
+// server.use(restify.authorizationParser())
+// server.use(restify.dateParser())
+// server.use(restify.queryParser())
+// server.use(restify.jsonp())
+// server.use(restify.gzipResponse())
+// server.use(restify.bodyParser())
+// server.use(restify.throttle({
+//   burst: 100,
+//   rate: 50,
+//   ip: true,
+//   overrides: {
+//     '192.168.1.1': {
+//       rate: 0,        // unlimited
+//       burst: 0
+//     }
+//   }
+// }))
+// server.use(restify.conditionalRequest())
+
 // Use bodyParser to read body of posts request
-server.use(restify.bodyParser());
+server.use(restify.bodyParser())
 // Call routes
-router(server);
+router(server)
 
 // Server listen initialize
 server.listen(port, function (err) {
